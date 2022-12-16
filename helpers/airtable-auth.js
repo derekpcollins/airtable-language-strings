@@ -8,4 +8,4 @@ Airtable.configure({
 var base = Airtable.base(process.env.AIRTABLE_BASE_ID);
 var table = base(process.env.AIRTABLE_TABLE_ID);
 
-console.log(table);
+module.exports = table;
