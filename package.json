@@ -1,0 +1,24 @@
+{
+  "name": "airtable-langauge-strings",
+  "version": "1.0.0",
+  "description": "A test application that shows how to store and retrieve data from Airtable.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekpcollins/airtable-language-strings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekpcollins/airtable-language-strings/issues"
+  },
+  "homepage": "https://github.com/derekpcollins/airtable-language-strings#readme",
+  "dependencies": {
+    "airtable": "^0.11.6",
+    "dotenv": "^16.0.3",
+    "require": "^2.4.20"
+  }
+}

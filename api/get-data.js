@@ -1,18 +1,14 @@
-const table = require("../helpers/airtable-auth");
+const table = require('../helpers/airtable-auth');
 
 async function getData() {
-  const records = await table
-    .select({
-      view: "Grid view",
-    })
-    .firstPage();
-
+  const records = await table.select().firstPage();
+  
   const formattedRecords = await records.map((record) => ({
     id: record.id,
     ...record.fields,
-  }));
-
-  return formattedRecords;
+   }));
+    
+   return formattedRecords;
 }
 
 module.exports = async (req, res) => {
@@ -21,4 +17,4 @@ module.exports = async (req, res) => {
   } catch (err) {
     res.send(err);
   }
-};
+}
